@@ -1,6 +1,7 @@
 .box1 header h1 {
     font-size: 40px;
     padding: 30px;
+    margin-left: -30px;
     }
 .box1 {
     background-color: white;
@@ -13,7 +14,7 @@
     color: black;
     position: fixed;
     margin-left: 120px;
-    padding: 80px 80px 80px 80px;
+    padding: 70px 70px 70px 70px;
 }
 .box3 {
     background-color: #eee;
@@ -30,6 +31,6 @@
     position: absolute;
     padding: 40px 40px 40px 40px;
     text-align: center;
-    margin-top: -490px;
-    margin-left: 550px;
+    margin-top: -456px;
+    margin-left: 630px;
 }
