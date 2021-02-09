@@ -1,0 +1,220 @@
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+body {
+    background-color: #dddddd;
+}
+
+/* Add a black background color to the top navigation */
+.navbar {
+    background-color: #ffffff;
+    padding: 8px;
+    overflow: hidden;
+    position: relative;
+    margin-right: initial;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #777777;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: right;
+  }
+.about .portfolio .contact {
+font-size: 9px;
+}
+
+  /* Change the color of links on hover */
+  .navbar a:hover {
+    background-color: #dddddd;
+    color: rgb(165, 161, 161);
+  }
+  
+  /* Add a color to the active/current link */
+  .navbar a.active {
+    /* background-color: #c3c4c3; */
+    color: white;
+  }
+.name {
+    padding: 28px;
+    background-color: #4aaaa5;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    position: absolute;
+    margin-top: -21px;
+    margin-left: 150px;
+}
+#profile-picture {
+    position: relative;
+    max-width:20%;
+    height:auto;
+    float: left;
+    padding: 10px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr; 
+}
+#pic1 {
+  position: relative;
+  max-width:50%;
+  height:auto;
+  padding: 10px;
+  display: flex; 
+}
+#pic2 {
+  position: relative;
+  max-width:50%;
+  height:auto;
+  padding: 10px;
+  display: flex; 
+}
+#pic3 {
+  position: relative;
+  max-width:50%;
+  height:auto;
+  padding: 10px;
+  display: flex;
+}
+h3 {
+  align-items: center;
+  width: 107px;
+  height: 25px;
+  color: #ffffff;
+  background-color: #4aaaa5;
+  border: 1px solid #4aaaa5;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -50px;
+  margin-left: 10px;
+  position: relative;
+}
+.box2 {
+    font-weight: bold;
+    color: #4aaaa5;
+    font-size: 25px;
+    padding-bottom: 10px;
+    font-family: 'Georgia', Times, Times New Roman, serif;;
+}
+hr.solid {
+    border-top: 3px solid #cccccc;
+  }
+
+.box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-width: 40px;
+    border-style: solid;
+    border-color: #dddddd;
+    width: 960px;
+}
+.box5 {
+    background-color: #ffffff;
+    padding: 30px;
+    border-width: 40px;
+    border-style: solid;
+    border-color: #dddddd;
+    width: 700px;
+    margin-top: 10px;
+}
+
+.box6 {
+  background-color: #ffffff;
+  padding: 30px;
+  border-width: 40px;
+  border-style: solid;
+  border-color: #dddddd;
+  width: 900px;
+  height: 600px;
+}
+.box1 {
+    color: #777777;
+}
+.box3 {
+    padding: 10px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;;
+}
+.box4 {
+    padding: 10px;
+}
+form {
+    position: relative;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #4aaaa5;
+  }
+  
+  /* Style the container/contact section */
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;  
+    background-color: #666666;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    padding-top: 10px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;;
+  }
+  #footer2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;  
+    background-color: #4aaaa5;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
