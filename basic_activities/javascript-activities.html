@@ -10,6 +10,59 @@
     const email = prompt('enter your email');
     const password = prompt('enter password');
     alert('Hello ' + greeting + ' email is ' + email + ' and password is '+ password);
+
+    const studentList = [];
+    const name1 = prompt(['enter a name']);
+    const name2 = prompt(['enter a name']);
+    const name3 = prompt(['enter a name']);
+    const name4 = prompt(['enter a name']);
+    const name5 = prompt(['enter a name']);
+    studentList.push([name1]);
+    studentList.push([name2]);
+    studentList.push([name3]);
+    studentList.push([name4]);
+    studentList.push([name5]);
+    let studentName = (studentList[1]);
+    alert (studentName);
+    const newStudent = prompt(['choose an index#']);
+    alert (newStudent);
+
+    const student = ['Ashley','Brianna','Christina','Jessica','Rinaya'];
+    const addStudent = prompt(['Enter a name to check']);
+    alert(student.includes(addStudent));
+
+    for(let i = 5; i<= 9; i++){
+        print(i);
+    }
+    let piggywooo = 0;
+    while( piggywooo <5){
+        print(piggywooo);
+        piggywooo++;
+    }
+    for(let i=10; i >= 0; i--){
+        print(i);
+    }
+
+    let nameList = [];
+    for(let i = 0; i<5;i++){
+        let name = prompt(['enter a name']);
+        nameList.push([name[i]]);
+    }
+    for(let i = 0; i < nameList.length; i++){
+        let newList = nameList[i];
+        alert(newList);
+    }
+    let arrayNames = [];
+    let number = prompt(['enter number of names']);
+    for(i=0; i<=number; i++){
+        let newNames = prompt('type a person number ${i+1}`s name:');
+        arrayNames.push(newNames);
+    }
+    for(let i=0; i <arrayNames.length; i++){
+        print(arrayNames[i]);
+    }
+
+
     </script>
 </body>
 </html>
