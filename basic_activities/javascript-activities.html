@@ -6,6 +6,11 @@
 <body>
 
     <script>
+//     Create an array with five students.
+// Take in a student name as input from the user.
+// Alert true if that student is in the array.
+// Alert false if that student is not in the array.
+
     const greeting = prompt('enter your name');
     const email = prompt('enter your email');
     const password = prompt('enter password');
@@ -31,6 +36,9 @@
     const addStudent = prompt(['Enter a name to check']);
     alert(student.includes(addStudent));
 
+//     Use a loop to render the numbers 5 through 9.
+// Use a separate loop to render the word piggywooo five times.
+
     for(let i = 5; i<= 9; i++){
         print(i);
     }
@@ -42,6 +50,22 @@
     for(let i=10; i >= 0; i--){
         print(i);
     }
+
+//     Create a flowchart to represent the following program, then code it out.
+
+// Using a loop, prompt the user to enter five names.
+// Push each name to a nameList array.
+// Using another loop, render/alert the five student names.
+// Challenge:
+
+// Don't forget to flowchart FIRST!
+
+// Prompt the user for a number of students in the class.
+// Prompt the user to input that many names.
+// Render all of the names.
+// Ultra Challenge:
+
+// Working off of the bonus, print only the people whose names include the letter a.
 
     let nameList = [];
     for(let i = 0; i<5;i++){
@@ -62,6 +86,152 @@
         print(arrayNames[i]);
     }
 
+//     Using the given classList array:
+
+// Prompt the user for the name of a class they would like to update.
+// Prompt the user for a new class name.
+// Replace the old class name with the new one.
+// <!DOCTYPE html>
+// <html>
+// <head>
+//     <meta charset="utf-8" />
+//     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+//     <title>Conditionals Activity</title>
+//     <meta name="viewport" content="width=device-width, initial-scale=1">
+// </head>
+// <body>
+
+//     <script>
+//         const classList = ['Math', 'Science', 'English', 'Music', 'Intro to Programming', 'Basketweaving'];
+
+//         // Remember to open up chrome dev tools to see your class list!
+//         console.log(classList);
+
+//         // Add your code below. Don't forget to console log classList again to see if the changes have taken place!
+
+
+
+    let classList = ['Math', 'Science', 'English', 'Music', 'Intro to Programming', 'Basketweaving']
+    let className = prompt(['name of class you would like to update']);
+    let newClass = prompt(['new class name']);
+    console.log(classList);
+    for(i=0; i < classList.length; i++){
+        if(classList[i] === className){
+        className[i] = newClass;
+
+    }
+    }
+
+    // Do the above without writing a for loop.
+
+     // Challenge
+     if (classList.includes(replaceClass)) {
+            const newIndex = classList.indexOf(replaceClass);
+            classList[newIndex] = newClass;
+        }
+
+        console.log(`This is your new class list: ${classList}`);
+
+    let username = prompt('type a username');
+    let password = prompt('type a password');
+    if(username === 'admin' && password === '1234'){
+        alert = ('Welcome to the admin page');
+    }
+    else if(username === 'average joe' && password === 'jsRocks'){
+        alert = ('Welcome to the user landing page');
+    }
+    else{
+        alert('Invalid username and password, refresh the page to try again');
+    }
+
+//     Start by creating a new function called multiplyFunc.
+// multiplyFunc should take in one parameter.
+// Within the code block, you should simply console log out the parameter.
+// Finally, call your function passing in any argument you wish.
+// Challenge:
+
+// Re-write the multiplyFunc so that it will console log the taken parameter multiplied by 3.
+
+    const multiplyFunc = function(multiply){
+        console.log(multiply);
+    }
+    multiplyFunc(4);
+
+    const multiplyFunc = function(multiply){
+        console.log(multiply*3);
+    }
+    multiplyFunc(4);
+
+//     In this activity , you'll use objects to make an interactive phone book:
+
+// In the code provided, add more contacts to the contacts object.
+// console.log one person's phone number.
+// Next add a prompt that prompts the user for a name and store the response in a variable called prop
+// Use an alert to display the phone number associated with the name the user entered.
+// Hint: You may need to use bracket notation for this exercise.
+
+const contacts = {
+    dan: "555-330-2289",
+    dante: "555-660-2295",
+    emily: "404-376-9999",
+    Jazzy: "678-444-9203"
+}
+console.log(contacts.emily);
+
+let prop = prompt(['Write a name']);
+
+alert(contacts[prop]);
+
+// Challenge:
+
+// For each person in the contacts object, create a new object that will hold their 
+// phone number, address, and state of residency. Then console.log one person's address.
+
+
+const contacts = {
+    dan: {
+        number: '555-330-2289',
+        address: '123 Pelegrino St.',
+        state: 'CA'
+    },
+    george: {
+        number: '555-123-3321',
+        address: '550 Cappuccino Ave.',
+        state: 'GA'
+    }
+};
+
+console.log(contacts.george.address);
+
+
+
+// Add code for makeSound, sleep, and feed methods on the dog object.
+
+// Open the following in your code editor.
+// When makeSound is called, the object's sound property should be logged to the console using the this keyword.
+// When sleep is called, the object's isSleepy property should be set to false, and its isHungry property should be set to true. Use the this keyword to access both properties. Add a console log statement to explain to the user what's happening.
+// When feed is called, the object's isHungry property should be set to false, and its isSleepy property should be set to true. Use the this keyword to access both properties. Add a console log statement to explain to the user what's happening.
+// At each step remember to test your code in the console!
+
+const dog = {
+  isSleepy: false,
+  isHungry: true,
+  sound: "Woof!",
+  name: "Spot"
+};
+const makeSound = function(){
+    console.log(this.sound);
+}
+const sleep = function(){
+    this.isSleepy = false;
+    this.isHungry = true;
+    console.log(`${this.name} took a nap and is now hungry!`);
+}
+const feed = function(){
+    this.isHungry = false;
+    this.isSleepy = true;
+    console.log(`${this.name} just ate and is now sleepy`);
+}
 
     </script>
 </body>
