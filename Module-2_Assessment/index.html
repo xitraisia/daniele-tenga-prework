@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <html>
+
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Guessing Game</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     </head>
-<body>
+
+    <header><h1>HangMan Dance Edition!</h1></header>
+    <body>
+        <div id="output">
+            <img id="hint" src="assets/images/ballet.jpeg">
+            <p>Press any key to get started!</p>
+            <p id="letters">_ _ _ _</p>
+            <p id="tracker">0</p>
+            <p id="guesses"></p>
+        </div>
 
 
-    <script src="assets/javascript/game.js"></script>
-</body>
+
+        <script src="assets/javascript/game.js"></script>
+    </body>
 
 </html>
